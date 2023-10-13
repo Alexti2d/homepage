@@ -1,7 +1,7 @@
 
 /* Random fonction */
 
-rdm = Math.random() * (7 - 1) + 1;
+rdm = Math.random() * (6 - 1) + 1;
 
 switch (Math.round(rdm)) {
   case 1:
@@ -20,9 +20,6 @@ switch (Math.round(rdm)) {
     dossier = "stars";
     break;
   case 6:
-    dossier = "gradient";
-    break;
-  case 7:
     dossier = "colibri";
     break;
   default:

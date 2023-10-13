@@ -21,55 +21,46 @@
 <body class="activity-stream" style="--newtab-search-icon: url(chrome://global/skin/icons/search-glass.svg);">
 	<!-- Begins the start page -->
 	<div id="fondEcran"></div>
-	<!-- <iframe style="width: 175vw;height: 100vh;border: none;hidden;position: fixed;" src="./background/voitures/index.html"></iframe> -->
-	<!-- <iframe style="width: 100vw;height: 100vh;border: none;hidden;position: fixed;" src="./background/voitures/index.html"></iframe> -->
-	<div class="layout">
-
-		<!-- Begins the settings part -->
-		<div id="settings" onclick="showSettings(event)" title="Open the settings">
-			<div class="menuline"></div>
-			<div class="menuline"></div>
-			<div class="menuline"></div>
+	<div id="settings" onclick="showSettings(event)" title="Open the settings">
+		<div class="menuline"></div>
+		<div class="menuline"></div>
+		<div class="menuline"></div>
+	</div>
+	<div id="settings_open" onclick="showSettings(event)" title="Close the settings">
+		<div class="line1">
 		</div>
-		<div id="settings_open" onclick="showSettings(event)" title="Close the settings">
-			<div class="line1">
-			</div>
-			<div class="line2">
-			</div>
+		<div class="line2">
 		</div>
-		<div class="settings_menu">
-			<div class="settings_text">
-				<h1>Settings</h1>
-				<br>
-				<div class="settings_header">
-					Default search engine
-				</div>
-
-				<select id="settings_engine" title="Choose the search engine">
-					<option value="DuckDuckGo">DuckDuckGo</option>
-					<option value="Google">Google</option>
-					<option value="Ecosia">Ecosia</option>
-					<option value="Brave">Brave</option>
-					<option value="Bing">Bing</option>
-					<option value="Yahoo">Yahoo</option>
-					<option value="Lilo">Lilo</option>
-				</select>
-				<br>
-				<br>
-				<button id="apply" onclick="applySettings()" title="Apply the new settings">
-					Apply
-				</button>
-				<br>
-				<div id="settings_applied">
-					Settings successfully applied
-				</div>
-			</div>
+	</div>
+	<div class="settings_menu">
+		<div class="settings_text">
+			<h1>Settings</h1>
 			<br>
+			<div class="settings_header">
+				Default search engine
+			</div>
+
+			<select id="settings_engine" title="Choose the search engine">
+				<option value="DuckDuckGo">DuckDuckGo</option>
+				<option value="Google">Google</option>
+				<option value="Ecosia">Ecosia</option>
+				<option value="Brave">Brave</option>
+				<option value="Bing">Bing</option>
+				<option value="Yahoo">Yahoo</option>
+				<option value="Lilo">Lilo</option>
+			</select>
+			<br>
+			<br>
+			<button id="apply" onclick="applySettings()" title="Apply the new settings">
+				Apply
+			</button>
+			<br>
+			<div id="settings_applied">
+				Settings successfully applied
+			</div>
 		</div>
-	<!-- <footer class="text">
-		Made by <a class="hoverlink" href="https://github.com/anic17">anic17</a>.<br>
-	</footer> -->
-</div>
+		<br>
+	</div>
 
 <div id="root">
 	<div><span><button class="icon icon-settings personalize-button personalize-animate-appear-done personalize-animate-enter-done" data-l10n-id="newtab-personalize-icon-label" title="Personnaliser la page de nouvel onglet" aria-label="Personnaliser la page de nouvel onglet"></button>
