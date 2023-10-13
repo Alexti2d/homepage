@@ -1,3 +1,37 @@
+
+/* Random fonction */
+
+rdm = Math.random() * (7 - 1) + 1;
+
+switch (Math.round(rdm)) {
+  case 1:
+    dossier = "voiture";
+    break;
+  case 2:
+    dossier = "synthwave";
+    break;
+  case 3:
+    dossier = "cube";
+    break;
+  case 4:
+    dossier = "matrice";
+    break;
+  case 5:
+    dossier = "stars";
+    break;
+  case 6:
+    dossier = "gradient";
+    break;
+  case 7:
+    dossier = "colibri";
+    break;
+  default:
+    dossier = "voiture";
+}
+
+fondEcran = document.getElementById("fondEcran");
+fondEcran.innerHTML += `<iframe style="width: 175vw;height: 100vh;border: none;hidden;position: fixed;" src="./background/${dossier}/index.html"></iframe>`;
+
 /* Cookie functions */
 
 function setCookie(name, value, exp_days) {
@@ -31,7 +65,8 @@ const englist = [
     "Ecosia", 
     "Brave",
     "Bing",
-    "Yahoo" 
+    "Yahoo",
+    "Lilo",
 ];
 const queryurl = [
     "https://duckduckgo.com/?q=",
@@ -39,7 +74,8 @@ const queryurl = [
     "https://www.ecosia.org/search?q=",
     "https://search.brave.com/search?q=",
     "https://www.bing.com/search?q=",
-    "https://search.yahoo.com/search?p="
+    "https://search.yahoo.com/search?p=",
+    "https://search.lilo.org/?q="
 ];
 
 function setSearchEngine(search)
