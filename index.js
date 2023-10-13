@@ -1,7 +1,7 @@
 
 /* Random fonction */
 
-rdm = Math.random() * (6 - 1) + 1;
+rdm = Math.random() * (7 - 1) + 1;
 
 switch (Math.round(rdm)) {
   case 1:
@@ -22,12 +22,15 @@ switch (Math.round(rdm)) {
   case 6:
     dossier = "colibri";
     break;
+  case 7:
+    dossier = "emoji";
+    break;
   default:
     dossier = "voiture";
 }
-
+// dossier = "yoda";
 fondEcran = document.getElementById("fondEcran");
-fondEcran.innerHTML += `<iframe style="width: 175vw;height: 100vh;border: none;hidden;position: fixed;" src="./background/${dossier}/index.html"></iframe>`;
+fondEcran.innerHTML += `<iframe style="width: 175vw;height: 100vh;border: none;overflow: hidden;position: fixed;" src="./background/${dossier}/index.html"></iframe>`;
 
 /* Cookie functions */
 
