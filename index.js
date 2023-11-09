@@ -1,7 +1,7 @@
 
 /* Random fonction */
 
-rdm = Math.random() * (7 - 1) + 1;
+rdm = Math.random() * (9 - 1) + 1;
 
 switch (Math.round(rdm)) {
   case 1:
@@ -25,10 +25,16 @@ switch (Math.round(rdm)) {
   case 7:
     dossier = "emoji";
     break;
+  case 8:
+    dossier = "travel";
+    break;
+  case 9:
+    dossier = "rocketman";
+    break;
   default:
     dossier = "voiture";
 }
-// dossier = "yoda";
+// dossier = "rocketman";
 fondEcran = document.getElementById("fondEcran");
 fondEcran.innerHTML += `<iframe style="width: 175vw;height: 100vh;border: none;overflow: hidden;position: fixed;" src="./background/${dossier}/index.html"></iframe>`;
 
