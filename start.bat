@@ -1,1 +1,1 @@
-npx vite --port 6367
+npx vite preview --port 6367

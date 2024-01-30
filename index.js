@@ -1,7 +1,7 @@
 
 /* Random fonction */
-
-rdm = Math.random() * (9 - 1) + 1;
+var dossier = "synthwave"
+var rdm = Math.random() * (9 - 1) + 1;
 
 switch (Math.round(rdm)) {
   case 1:
