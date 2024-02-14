@@ -1,7 +1,9 @@
+// Nombre de background dans votre dossier background
+var nbBackground = 11
 
 /* Random fonction */
 var dossier = "synthwave"
-var rdm = Math.random() * (9 - 1) + 1;
+var rdm = Math.random() * (nbBackground - 1) + 1;
 
 switch (Math.round(rdm)) {
   case 1:
@@ -30,6 +32,15 @@ switch (Math.round(rdm)) {
     break;
   case 9:
     dossier = "rocketman";
+    break;
+  case 10:
+    dossier = "geometrique";
+    break;
+  case 11:
+    dossier = "atome";
+    break;
+  case 11:
+    dossier = "meduse";
     break;
   default:
     dossier = "voiture";
