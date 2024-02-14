@@ -1,7 +1,10 @@
 <h1>Homepage</h1>
 Home page est un projet pour rajouter un fond d'écran animé à la page d'accueil de Firefox
 <br/><br/>
-Fork de anic17.github.io/homepage
+Fork de HomePage de anic17.github.io/homepage
+<br/><br/>
+
+![alt text](HomePage.png)
 
 <h2>Installation</h2>
 
