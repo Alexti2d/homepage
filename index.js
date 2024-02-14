@@ -34,7 +34,7 @@ switch (Math.round(rdm)) {
   default:
     dossier = "voiture";
 }
-// dossier = "rocketman";
+// dossier = "meduse";
 fondEcran = document.getElementById("fondEcran");
 fondEcran.innerHTML += `<iframe style="width: 175vw;height: 100vh;border: none;overflow: hidden;position: fixed;" src="./background/${dossier}/index.html"></iframe>`;
 
